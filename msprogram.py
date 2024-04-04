@@ -1,6 +1,6 @@
 #Import Pandas
 import pandas as pd
-import IPython.display as pdd
+
 
 #Converts TextFile into dictionary which is then passed into pandas to create data frame (see pandas documentation)
 def dataframecreator(textfile):
@@ -39,5 +39,4 @@ def dataframecreator(textfile):
     openfile.close()
     return pd.DataFrame(databaseDictionary)  
 
-print(dataframecreator("./terp.txt"))
 
